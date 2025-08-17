@@ -1,0 +1,21 @@
+# === DiscordWhitelistPlugin configuration ===
+# Channel IDs on Discord where commands are accepted. Leave empty to allow any channel.
+allowedChannelIds:
+  - "123456789012345678"
+
+# Optional: at least one of these role IDs must be present on the Discord user to run commands.
+# Leave empty to allow anyone in allowed channels.
+requiredRoleIds:
+  - ""
+
+# Command prefix to use in Discord messages.
+# Usage:
+#   !wl <nick>          -> add to whitelist
+#   !uwl <nick>         -> remove from whitelist
+#   !wlcheck <nick>     -> check whitelist status
+commandPrefixAdd: "!wl"
+commandPrefixRemove: "!uwl"
+commandPrefixCheck: "!wlcheck"
+
+# Reply in Discord after executing a command.
+replyInDiscord: true
